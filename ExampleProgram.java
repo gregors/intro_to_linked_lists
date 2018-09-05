@@ -1,13 +1,4 @@
-public class NodeTest {
-
-  public static void printOutList(Node start) {
-    Node temp = start;
-    while(temp != null) {
-      System.out.print("[ " + temp.getValue() + "] -> ");
-      temp = temp.getNext();
-    }
-    System.out.println("null");
-  }
+public class ExampleProgram {
 
   public static void main(String args[]) {
     Node one = new Node(5, null);
@@ -17,5 +8,14 @@ public class NodeTest {
     Node five = new Node(25, four);
     Node head = five;
     printOutList(head);
+  }
+
+  public static void printOutList(Node start) {
+    Node temp = start;
+    while(temp != null) {
+      System.out.print("[ " + temp.getValue() + "] -> ");
+      temp = temp.getNext();
+    }
+    System.out.println("null");
   }
 }
